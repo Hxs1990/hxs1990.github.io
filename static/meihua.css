@@ -1,0 +1,365 @@
+* {
+	margin:0;
+	padding:0
+}
+body {
+	font:400 16px/1.62 Georgia,"Xin Gothic","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei",sans-serif;
+	color:#535353;
+	overflow:hidden
+}
+.willerce {
+	text-align:center;
+	margin:100px auto auto auto;
+	max-width:700px;
+	padding:0 20px
+}
+.willerce a {
+	color:#535353;
+	text-decoration:underline
+}
+.willerce a:link,.willerce a:visited {
+	color:#535353;
+	text-decoration:underline
+}
+h1 {
+	font-size:26px;
+	color:#424242;
+	margin-bottom:20px
+}
+.nav a {
+	padding:0 6px 0 6px
+}
+@keyframes fade-in {
+	0% {
+	opacity:0
+}
+40% {
+	opacity:0
+}
+100% {
+	opacity:1
+}
+}@-webkit-keyframes fade-in {
+	0% {
+	opacity:0
+}
+40% {
+	opacity:0
+}
+100% {
+	opacity:1
+}
+}.willerce {
+	animation:fade-in;
+	animation-duration:1s;
+	-webkit-animation:fade-in 1s
+}
+
+#hewenqi {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 9999;
+    display:block;
+}
+
+#pauseHovertree, #playHovertree {
+    border: 0px solid yellow;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 1;
+    background-image: url(./music.png);
+    height: 44px;
+    width: 44px;
+    background-repeat: no-repeat;
+}
+
+#playHovertree {
+    display:none;
+}
+
+#hovertreemessage {
+    position:fixed;
+    bottom:5px;
+    right:0px;
+    color:white;
+    display:none;
+}
+
+.hovertreerun {
+    animation: hovertreecircle 2s linear infinite;
+    -webkit-animation:hovertreecircle 5s linear infinite; /* Safari and Chrome*/
+}
+
+@keyframes hovertreecircle {
+    from {
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg); 	/* IE 9 */
+        -moz-transform:rotate(0deg); 	/* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari ºÍ Chrome */
+        -o-transform:rotate(0deg); 	/* Opera */
+    }
+
+    to {
+
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg); 	/* IE 9 */
+        -moz-transform:rotate(360deg); 	/* Firefox */
+        -webkit-transform:rotate(360deg); /* Safari ºÍ Chrome */
+        -o-transform:rotate(360deg); 	/* Opera */
+    }
+
+}
+
+@-webkit-keyframes hovertreecircle { /*Safari and Chrome*/
+    from {
+
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg); 	/* IE 9 */
+        -moz-transform:rotate(0deg); 	/* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari ºÍ Chrome */
+        -o-transform:rotate(0deg); 	/* Opera */
+    }
+
+    to {
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg); 	/* IE 9 */
+        -moz-transform:rotate(360deg); 	/* Firefox */
+        -webkit-transform:rotate(360deg); /* Safari ºÍ Chrome */
+        -o-transform:rotate(360deg); 	/* Opera */
+    }
+}
+
+#meihua {
+	position:fixed;
+    right:0;
+    top:0;
+    margin-top: 0px;
+    z-index: -100;
+}
+
+#fangzi {
+    position:fixed;
+    left:0;
+    bottom:0;
+    margin-bottom: 0px;
+    z-index: -100;
+}
+
+.leave {
+	position: fixed;
+	width: 25px;
+	height: 25px;
+	z-index: -200;
+	-webkit-animation-iteration-count: infinite,infinite;
+	-webkit-animation-direction: normal,normal;
+	-webkit-animation-timing-function: linear,ease-in;
+	-moz-animation-iteration-count: infinite,infinite;
+	-moz-animation-direction: normal,normal;
+	-moz-animation-timing-function: linear,ease-in;
+	-o-animation-iteration-count: infinite,infinite;
+	-o-animation-direction: normal,normal;
+	-o-animation-timing-function: linear,ease-in;
+	animation-iteration-count: infinite,infinite;
+	animation-direction: normal,normal;
+	animation-timing-function: linear,ease-in;
+}
+
+.leave>img {
+	position: fixed;
+	width: 25px;
+	height: 25px;
+	z-index: -200;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-transform-origin: 50% -100%;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-transform-origin: 50% -100%;
+	-o-animation-iteration-count: infinite;
+	-o-animation-direction: alternate;
+	-o-animation-timing-function: ease-in-out;
+	-o-transform-origin: 50% -100%;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	transform-origin: 50% -100%;
+}
+
+@-webkit-keyframes fade {
+	0% {
+		opacity: 1
+	}
+
+	95% {
+		opacity: 1
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@-webkit-keyframes drop {
+	0% {
+		-webkit-transform: translate(30px,-50px)
+	}
+
+	100% {
+		-webkit-transform: translate(-200px,650px)
+	}
+}
+
+@-webkit-keyframes clockwiseSpin {
+	0% {
+		-webkit-transform: rotate(-50deg)
+	}
+
+	100% {
+		-webkit-transform: rotate(50deg)
+	}
+}
+
+@-webkit-keyframes counterclockwiseSpinAndFlip {
+	0% {
+		-webkit-transform: scale(-1,1) rotate(50deg)
+	}
+
+	100% {
+		-webkit-transform: scale(-1,1) rotate(-50deg)
+	}
+}
+
+@-moz-keyframes fade {
+	0% {
+		opacity: 1
+	}
+
+	95% {
+		opacity: 1
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@-moz-keyframes drop {
+	0% {
+		-moz-transform: translate(30px,-50px)
+	}
+
+	100% {
+		-moz-transform: translate(-200px,650px)
+	}
+}
+
+@-moz-keyframes clockwiseSpin {
+	0% {
+		-moz-transform: rotate(-50deg)
+	}
+
+	100% {
+		-moz-transform: rotate(50deg)
+	}
+}
+
+@-moz-keyframes counterclockwiseSpinAndFlip {
+	0% {
+		-moz-transform: scale(-1,1) rotate(50deg)
+	}
+
+	100% {
+		-moz-transform: scale(-1,1) rotate(-50deg)
+	}
+}
+
+@-o-keyframes fade {
+	0% {
+		opacity: 1
+	}
+
+	95% {
+		opacity: 1
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@-o-keyframes drop {
+	0% {
+		-o-transform: translate(30px,-50px)
+	}
+
+	100% {
+		-o-transform: translate(-200px,650px)
+	}
+}
+
+@-o-keyframes clockwiseSpin {
+	0% {
+		-o-transform: rotate(-50deg)
+	}
+
+	100% {
+		-o-transform: rotate(50deg)
+	}
+}
+
+@-o-keyframes counterclockwiseSpinAndFlip {
+	0% {
+		-o-transform: scale(-1,1) rotate(50deg)
+	}
+
+	100% {
+		-o-transform: scale(-1,1) rotate(-50deg)
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1
+	}
+
+	95% {
+		opacity: 1
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@keyframes drop {
+	0% {
+		transform: translate(30px,-50px)
+	}
+
+	100% {
+		transform: translate(-200px,650px)
+	}
+}
+
+@keyframes clockwiseSpin {
+	0% {
+		transform: rotate(-50deg)
+	}
+
+	100% {
+		transform: rotate(50deg)
+	}
+}
+
+@keyframes counterclockwiseSpinAndFlip {
+	0% {
+		transform: scale(-1,1) rotate(50deg)
+	}
+
+	100% {
+		transform: scale(-1,1) rotate(-50deg)
+	}
+}
